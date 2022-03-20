@@ -6,8 +6,6 @@ services:
       - db
     ports:
       - "9000:9000"
-    networks:
-      - sonarnet
     environment:
       - sonar.jdbc.url=jdbc:postgresql://db:5432/sonarqube
       - sonar.jdbc.username=sonar
